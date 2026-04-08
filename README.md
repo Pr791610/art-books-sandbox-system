@@ -8,3 +8,7 @@
 - <https://buy.stripe.com/dRm5kE3Lq7IK2T3ehNcjS03>
 - <https://buy.stripe.com/4gM28s5TygfgdxH4HdcjS07>
 - <https://buy.stripe.com/3cIaEYchWfbc79j3D9cjS08>
+- <https://buy.stripe.com/aFa3cweq48MO79j4HdcjS0e>
+- <https://buy.stripe.com/aFa28sgyc6EG65f2z5cjS0f>
+- <https://buy.stripe.com/3cIfZidm00gieBL4HdcjS0g>
+- 
