@@ -20,3 +20,15 @@
 -<https://buy.stripe.com/cNi00k2Hm3su2T32z5cjS0J>
 -<https://buy.stripe.com/14A9AU3Lq9QS51b4HdcjS0K>
 -
+<https://buy.stripe.com/fZudRa0ze0gifFP5LhcjS0O>
+-
+<https://buy.stripe.com/00w14o4Pu3su8dnc9FcjS0N>
+-
+<https://buy.stripe.com/6oU14oeq4fbceBLflRcjS0M>
+-
+<https://buy.stripe.com/9B63cw2HmaUW1OZ2z5cjS0R>
+-
+<https://buy.stripe.com/fZu14obdS4wy8dn7TpcjS0Q>
+-
+<https://buy.stripe.com/00w6oIa9Oe78alv8XtcjS0P>
+-
