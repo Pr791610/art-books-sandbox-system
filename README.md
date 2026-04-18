@@ -15,10 +15,11 @@
 - <https://buy.stripe.com/9B63cwbdSbZ0bpzflRcjS0v>
 - <https://buy.stripe.com/3cIcN63Lq5AC0KVflRcjS0w>
 - <https://buy.stripe.com/00wbJ281G6EGalvflRcjS0G>
--  <https://buy.stripe.com/4gM3cw4Pu3su2T3gpVcjS0H>
--  <https://buy.stripe.com/14AfZibdS3su3X73D9cjS0I>
-- <https://buy.stripe.com/cNi00k2Hm3su2T32z5cjS0J>
--   
+- <https://buy.stripe.com/4gM3cw4Pu3su2T3gpVcjS0H>
+- <https://buy.stripe.com/14AfZibdS3su3X73D9cjS0I>
+-
+<https://buy.stripe.com/cNi00k2Hm3su2T32z5cjS0J>
+-
 <https://buy.stripe.com/14A9AU3Lq9QS51b4HdcjS0K>
 -
 <https://buy.stripe.com/fZudRa0ze0gifFP5LhcjS0O>
@@ -32,8 +33,10 @@
 <https://buy.stripe.com/fZu14obdS4wy8dn7TpcjS0Q>
 -
 <https://buy.stripe.com/00w6oIa9Oe78alv8XtcjS0P>
-- <https://buy.stripe.com/bJe5kE6XCe78eBL8XtcjS0S>
-- <https://buy.stripe.com/7sY8wQ81GbZ08dn4HdcjS0T>
+-
+<https://buy.stripe.com/bJe5kE6XCe78eBL8XtcjS0S>
+-
+<https://buy.stripe.com/7sY8wQ81GbZ08dn4HdcjS0T>
 -
 <https://buy.stripe.com/cNi6oI6XCgfg65f6PlcjS0U>
 -
