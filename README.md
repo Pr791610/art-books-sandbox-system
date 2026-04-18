@@ -32,4 +32,14 @@
 <https://buy.stripe.com/fZu14obdS4wy8dn7TpcjS0Q>
 -
 <https://buy.stripe.com/00w6oIa9Oe78alv8XtcjS0P>
+- <https://buy.stripe.com/bJe5kE6XCe78eBL8XtcjS0S>
+- <https://buy.stripe.com/7sY8wQ81GbZ08dn4HdcjS0T>
+-
+<https://buy.stripe.com/cNi6oI6XCgfg65f6PlcjS0U>
+-
+<https://buy.stripe.com/aFa5kEa9O1kmfFP1v1cjS0V>
+-
+<https://buy.stripe.com/7sY7sM3Lq0gictD3D9cjS0W>
+-
+<https://buy.stripe.com/cNi00k1Did34gJTflRcjS0X>
 -
