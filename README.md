@@ -46,3 +46,9 @@
 -
 <https://buy.stripe.com/cNi00k1Did34gJTflRcjS0X>
 -
+<https://buy.stripe.com/3cI14o0zee7865f4HdcjS0Y>
+-
+<https://buy.stripe.com/9B6aEY95K9QS3X70qXcjS0Z>
+-
+<https://buy.stripe.com/dRm3cw6XC5ACeBL7TpcjS10>
+-
