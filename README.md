@@ -51,4 +51,15 @@
 <https://buy.stripe.com/9B6aEY95K9QS3X70qXcjS0Z>
 -
 <https://buy.stripe.com/dRm3cw6XC5ACeBL7TpcjS10>
+-<https://buy.stripe.com/00wcN65Tyd34bpzgpVcjS14>
+-
+<https://buy.stripe.com/eVq8wQbdS6EG2T3flRcjS15>
+-
+<https://buy.stripe.com/dRm3cweq4aUW79j3D9cjS16>
+-
+<https://buy.stripe.com/8x2aEY81G4wyalv6PlcjS17>
+-
+<https://buy.stripe.com/6oU14ofu89QS65fgpVcjS18>
+-
+<https://buy.stripe.com/4gM28s1Di3sugJT3D9cjS19>
 -
