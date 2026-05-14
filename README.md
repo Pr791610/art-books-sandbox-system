@@ -1,3 +1,13 @@
+# 📚 BOOKS,LIBRI,КНИГИ.
+-
+<https://photos.app.goo.gl/2pZhsKwRE4L4ApDs7>
+-<https://play.google.com/store/apps/details?id=com.meqr>
+-
+# QR CODS GALERY.
+-
+<https://photos.app.goo.gl/3z4ZQHuvkxCMPooB6>
+-
+
 # art-books-sandbox-system
 ### 💳 Secure Payment
 -  <https://buy.stripe.com/28E8wQeq4aUWfFPa1xcjS00>
