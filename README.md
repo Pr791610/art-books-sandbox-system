@@ -6,6 +6,7 @@ BOOKS,LIBRI,КНИГИ.
 # QR CODS GALERY.
 -
 <https://photos.app.goo.gl/jwtnYPYzffY1PVAg8>
+-
 # QR продукт,Prodotto QR.
 -
 <https://photos.app.goo.gl/x7GXm8pN2DJnzra66>
@@ -20,7 +21,10 @@ BOOKS,LIBRI,КНИГИ.
 -
 <https://github.com/Pr791610/manasiev-art-books>
 -
+# Хуманитарни потреби и исплати,Bisogni umanitari e pagamenti,
 # art-books-sandbox-system
+-
+
 ### 💳 Secure Payment
 -  <https://buy.stripe.com/28E8wQeq4aUWfFPa1xcjS00>
 - <https://buy.stripe.com/4gM00kdm01kmctDgpVcjS01>
