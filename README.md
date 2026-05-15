@@ -5,6 +5,10 @@ BOOKS,LIBRI,КНИГИ.
 -
 # QR CODS GALERY.
 -
+<https://photos.app.goo.gl/jwtnYPYzffY1PVAg8>
+-
+# SERTIFICAT.
+-
 <https://photos.app.goo.gl/3z4ZQHuvkxCMPooB6>
 -
 # repo hub.
