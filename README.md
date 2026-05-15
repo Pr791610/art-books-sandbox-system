@@ -9,6 +9,8 @@ BOOKS,LIBRI,КНИГИ.
 -
 # SERTIFICAT.
 -
+<https://photos.app.goo.gl/6tTNSAjKrMZGoqGWA>
+-
 <https://photos.app.goo.gl/3z4ZQHuvkxCMPooB6>
 -
 # repo hub.
