@@ -6,6 +6,9 @@ BOOKS,LIBRI,КНИГИ.
 # QR CODS GALERY.
 -
 <https://photos.app.goo.gl/jwtnYPYzffY1PVAg8>
+# QR продукт,Prodotto QR.
+-
+<https://photos.app.goo.gl/x7GXm8pN2DJnzra66>
 -
 # SERTIFICAT.
 -
