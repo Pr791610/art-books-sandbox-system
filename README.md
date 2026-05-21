@@ -22,6 +22,9 @@ BOOKS,LIBRI,КНИГИ.
 <https://github.com/Pr791610/manasiev-art-books>
 -
 # Хуманитарни потреби и исплати,Bisogni umanitari e pagamenti,
+-
+<https://buy.stripe.com/7sYeVe4Pu9QS2T3gpVcjS06>
+-
 # art-books-sandbox-system
 -
 <https://agent-6a0e4f747--qr-art-vault-art-cod-collection.netlify.app/>
