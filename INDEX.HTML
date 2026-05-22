@@ -1,685 +1,209 @@
-<!-- ===================================================== -->
-<!-- BILT ART MUSEUM - COMPLETE AUTOMATED SYSTEM -->
-<!-- GENERATOR + STRIPE + QR + FILTERS + FULL DATABASE -->
-<!-- ===================================================== -->
+# MAIN index.html
 
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mk">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BILT ART MUSEUM - 99 Artworks</title>
-
-<!-- ===================================================== -->
-<!-- SEO OPTIMIZATION -->
-<!-- ===================================================== -->
-
-<meta name="description" content="BILT ART MUSEUM: 99 Museum-Grade Digital Artworks. Authentication Certificates, Stripe Payments, QR Codes, Collector Edition.">
-<meta name="keywords" content="digital art, museum, collectors, stripe, authentication, certificates">
-<meta property="og:title" content="BILT ART MUSEUM - 99 Artworks">
-<meta property="og:description" content="Collector Digital Art Infrastructure - Museum Grade">
-<meta property="og:type" content="website">
-
-<!-- ===================================================== -->
-<!-- COMPLETE STYLING SYSTEM -->
-<!-- ===================================================== -->
-
-<style>
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: linear-gradient(135deg, #050505 0%, #1a1a1a 100%);
-  color: white;
-  font-family: 'Arial', sans-serif;
-  overflow-x: hidden;
-}
-
-header {
-  padding: 40px 25px;
-  background: linear-gradient(135deg, #000000 0%, #1a0000 100%);
-  border-bottom: 3px solid gold;
-  text-align: center;
-  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
-}
-
-header h1 {
-  color: gold;
-  font-size: 48px;
-  letter-spacing: 8px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  margin-bottom: 10px;
-}
-
-header p {
-  color: #ffeb3b;
-  font-size: 16px;
-  letter-spacing: 3px;
-}
-
-.stats-bar {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  padding: 20px;
-  background: rgba(255, 215, 0, 0.1);
-  margin-top: 20px;
-  border-radius: 15px;
-  flex-wrap: wrap;
-}
-
-.stat {
-  text-align: center;
-}
-
-.stat-value {
-  font-size: 28px;
-  color: gold;
-  font-weight: bold;
-}
-
-.stat-label {
-  font-size: 12px;
-  color: #aaa;
-  text-transform: uppercase;
-}
-
-.controls {
-  padding: 30px;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.5);
-  border-bottom: 1px solid #333;
-}
-
-.filter-group {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-
-.filter-btn {
-  padding: 10px 20px;
-  background: #222;
-  color: white;
-  border: 2px solid #555;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: 0.3s;
-  font-weight: bold;
-}
-
-.filter-btn:hover {
-  border-color: gold;
-  color: gold;
-  transform: scale(1.05);
-}
-
-.filter-btn.active {
-  background: gold;
-  color: black;
-  border-color: gold;
-}
-
-.search-box {
-  padding: 12px 20px;
-  background: #111;
-  border: 2px solid #555;
-  color: white;
-  border-radius: 25px;
-  width: 100%;
-  max-width: 400px;
-  margin-bottom: 20px;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  padding: 40px;
-}
-
-.card {
-  background: linear-gradient(135deg, #111 0%, #1a1a1a 100%);
-  border-radius: 20px;
-  overflow: hidden;
-  border: 2px solid #333;
-  transition: all 0.4s;
-  position: relative;
-}
-
-.card:hover {
-  transform: translateY(-15px) scale(1.02);
-  border-color: gold;
-  box-shadow: 0 20px 40px rgba(255, 215, 0, 0.4);
-}
-
-.card-number {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: gold;
-  color: black;
-  padding: 5px 12px;
-  border-radius: 20px;
-  font-weight: bold;
-  font-size: 12px;
-  z-index: 10;
-}
-
-.card img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  transition: 0.4s;
-}
-
-.card:hover img {
-  transform: scale(1.05);
-  filter: brightness(1.1);
-}
-
-.content {
-  padding: 20px;
-}
-
-.title {
-  font-size: 24px;
-  color: gold;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-.description {
-  font-size: 13px;
-  color: #ccc;
-  margin-bottom: 15px;
-  line-height: 1.4;
-}
-
-.certificate-badge {
-  display: inline-block;
-  background: rgba(255, 215, 0, 0.2);
-  border: 1px solid gold;
-  color: gold;
-  padding: 5px 10px;
-  border-radius: 10px;
-  font-size: 11px;
-  margin-bottom: 10px;
-}
-
-.price {
-  font-size: 32px;
-  font-weight: bold;
-  color: gold;
-  margin: 15px 0;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-}
-
-.price-category {
-  font-size: 11px;
-  color: #888;
-  text-transform: uppercase;
-}
-
-.button {
-  display: block;
-  text-align: center;
-  padding: 12px;
-  background: linear-gradient(135deg, gold 0%, #ffeb3b 100%);
-  color: black;
-  font-weight: bold;
-  font-size: 14px;
-  text-decoration: none;
-  border-radius: 20px;
-  margin-top: 12px;
-  transition: 0.3s;
-  border: none;
-  cursor: pointer;
-}
-
-.button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
-}
-
-.button2 {
-  display: block;
-  text-align: center;
-  padding: 10px;
-  background: #222;
-  color: #aaa;
-  font-weight: bold;
-  font-size: 12px;
-  text-decoration: none;
-  border-radius: 15px;
-  margin-top: 8px;
-  border: 1px solid #555;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.button2:hover {
-  border-color: gold;
-  color: gold;
-}
-
-.qr-section {
-  margin-top: 15px;
-  padding-top: 15px;
-  border-top: 1px solid #333;
-  text-align: center;
-}
-
-.qr-label {
-  font-size: 10px;
-  color: #666;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-}
-
-.qr {
-  display: flex;
-  justify-content: center;
-}
-
-.qr img {
-  width: 140px;
-  height: 140px;
-  border: 2px solid #333;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-
-.qr img:hover {
-  border-color: gold;
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
-}
-
-.empty-state {
-  grid-column: 1 / -1;
-  text-align: center;
-  padding: 50px;
-  color: #666;
-}
-
-footer {
-  padding: 50px;
-  text-align: center;
-  border-top: 3px solid gold;
-  margin-top: 60px;
-  background: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5);
-}
-
-footer h2 {
-  color: gold;
-  margin-bottom: 20px;
-  font-size: 28px;
-}
-
-footer p {
-  margin: 10px 0;
-  font-size: 16px;
-}
-
-footer a {
-  color: gold;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-footer a:hover {
-  text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
-}
-
-@media (max-width: 768px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  header h1 {
-    font-size: 32px;
-  }
-  
-  .stats-bar {
-    gap: 30px;
-  }
-}
-
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ART & BOOKS SANDBOX</title>
+  <style>
+    body{
+      margin:0;
+      font-family:Arial,sans-serif;
+      background:#111;
+      color:white;
+      text-align:center;
+    }
+    header{
+      padding:40px;
+      background:#000;
+    }
+    h1{
+      font-size:40px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+      padding:30px;
+    }
+    .card{
+      background:#1e1e1e;
+      padding:25px;
+      border-radius:15px;
+      transition:0.3s;
+    }
+    .card:hover{
+      transform:scale(1.03);
+      background:#292929;
+    }
+    a{
+      text-decoration:none;
+      color:#00ffd5;
+      font-size:18px;
+      font-weight:bold;
+    }
+    footer{
+      padding:20px;
+      background:#000;
+      margin-top:30px;
+    }
+  </style>
 </head>
-
 <body>
 
-<!-- ===================================================== -->
-<!-- HEADER SECTION -->
-<!-- ===================================================== -->
-
 <header>
-  <h1>🎨 BILT ART MUSEUM</h1>
-  <p>Authentication • Collection • Preservation • Museum Grade</p>
-  
-  <div class="stats-bar">
-    <div class="stat">
-      <div class="stat-value" id="totalProducts">99</div>
-      <div class="stat-label">Artworks</div>
-    </div>
-    <div class="stat">
-      <div class="stat-value" id="avgPrice">€79</div>
-      <div class="stat-label">Avg Price</div>
-    </div>
-    <div class="stat">
-      <div class="stat-value" id="displayCount">99</div>
-      <div class="stat-label">Displayed</div>
-    </div>
-  </div>
+  <h1>ABS IT MK 2026</h1>
+  <p>ART & BOOKS SANDBOX SYSTEM</p>
 </header>
 
-<!-- ===================================================== -->
-<!-- CONTROLS SECTION -->
-<!-- ===================================================== -->
+<div class="grid">
 
-<div class="controls">
-  <input type="text" class="search-box" id="searchBox" placeholder="Search by title or price...">
-  
-  <div class="filter-group">
-    <button class="filter-btn active" data-filter="all">ALL ARTWORKS</button>
-    <button class="filter-btn" data-filter="budget">Budget (€0-50)</button>
-    <button class="filter-btn" data-filter="premium">Premium (€51-150)</button>
-    <button class="filter-btn" data-filter="vip">VIP (€150+)</button>
+  <div class="card">
+    <a href="gallery/index.html">ART GALLERY</a>
   </div>
+
+  <div class="card">
+    <a href="qr/index.html">QR ART VAULT</a>
+  </div>
+
+  <div class="card">
+    <a href="payments/index.html">STRIPE PAYMENTS</a>
+  </div>
+
+  <div class="card">
+    <a href="certificates/index.html">CERTIFICATES</a>
+  </div>
+
+  <div class="card">
+    <a href="books/index.html">DIGITAL BOOKS</a>
+  </div>
+
+  <div class="card">
+    <a href="https://agent-6a0e4f747--qr-art-vault-art-cod-collection.netlify.app/">LIVE QR SYSTEM</a>
+  </div>
+
 </div>
 
-<!-- ===================================================== -->
-<!-- GALLERY SECTION -->
-<!-- ===================================================== -->
-
-<section class="gallery" id="gallery">
-  <!-- Cards generated by JavaScript -->
-</section>
-
-<!-- ===================================================== -->
-<!-- FOOTER SECTION -->
-<!-- ===================================================== -->
-
 <footer>
-  <h2>🌟 Official Contact</h2>
-  <p><strong>Artist & Author:</strong><br>Nikolche Manasiev</p>
-  <p><a href="mailto:artbook.manas@yahoo.com">artbook.manas@yahoo.com</a></p>
-  <p style="margin-top: 30px; font-size: 12px; color: #666;">
-    © 2024 BILT ART MUSEUM | Museum Grade Digital Art Platform<br>
-    Stripe Payments • Authentication Certificates • QR Codes • Collector Edition
-  </p>
+  © 2026 Nikolche Manasiev | ART & BOOKS SANDBOX
 </footer>
-
-<!-- ===================================================== -->
-<!-- COMPLETE AUTOMATED SYSTEM SCRIPT -->
-<!-- ===================================================== -->
-
-<script>
-
-console.log("🎨 BILT ART MUSEUM ACTIVATED - COMPLETE SYSTEM LOADED");
-
-// ===== COMPLETE STRIPE PAYMENT DATABASE =====
-const stripeLinks = [
-  "https://buy.stripe.com/9B65kE81Gd34gJTehNcjS0c",
-  "https://buy.stripe.com/28E8wQeq4aUWfFPa1xcjS00",
-  "https://buy.stripe.com/4gM00kdm01kmctDgpVcjS01",
-  "https://buy.stripe.com/4gM6oIa9Oe78eBL4HdcjS02",
-  "https://buy.stripe.com/dRm5kE3Lq7IK2T3ehNcjS03",
-  "https://buy.stripe.com/4gM28s5TygfgdxH4HdcjS07",
-  "https://buy.stripe.com/3cIaEYchWfbc79j3D9cjS08",
-  "https://buy.stripe.com/cNi5kEbdS5AC65f7TpcjS09",
-  "https://buy.stripe.com/4gMbJ2gycfbc51b4HdcjS0a",
-  "https://buy.stripe.com/3cI28sbdS0gi2T32z5cjS0b",
-  "https://buy.stripe.com/9B65kE81Gd34gJTehNcjS0c",
-  "https://buy.stripe.com/9B69AUeq43subpz4HdcjS0d",
-  "https://buy.stripe.com/aFa3cweq48MO79j4HdcjS0e",
-  "https://buy.stripe.com/aFa28sgyc6EG65f2z5cjS0f",
-  "https://buy.stripe.com/3cIfZidm00gieBL4HdcjS0g",
-  "https://buy.stripe.com/5kQcN62HmbZ02T31v1cjS04",
-  "https://buy.stripe.com/dRm5kE3Lq7IK2T3ehNcjS03",
-  "https://buy.stripe.com/8x2bJ23LqbZ03X73D9cjS0h",
-  "https://buy.stripe.com/eVq5kE95K0gi0KVehNcjS0i",
-  "https://buy.stripe.com/cNiaEY3Lqfbc8dnehNcjS0j",
-  "https://buy.stripe.com/14A6oIgyc0gi2T31v1cjS0l",
-  "https://buy.stripe.com/14A6oI0ze0gictD0qXcjS0n",
-  "https://buy.stripe.com/14AdRa0zeaUW0KVehNcjS0o",
-  "https://buy.stripe.com/dRmbJ23LqbZ09hr1v1cjS0p",
-  "https://buy.stripe.com/6oU9AUdm05AC51b8XtcjS0q",
-  "https://buy.stripe.com/6oUfZibdSd342T35LhcjS0s",
-  "https://buy.stripe.com/7sYbJ25Tye78eBLa1xcjS0t",
-  "https://buy.stripe.com/9B63cwbdSbZ0bpzflRcjS0v",
-  "https://buy.stripe.com/eVq3cweq43su0KV4HdcjS0u",
-  "https://buy.stripe.com/3cIcN63Lq5AC0KVflRcjS0w",
-  "https://buy.stripe.com/eVqbJ20zeaUWfFP4HdcjS0x",
-  "https://buy.stripe.com/8x27sMchW9QS0KV4HdcjS0y",
-  "https://buy.stripe.com/8x2bJ22Hm1kmgJT5LhcjS0z",
-  "https://buy.stripe.com/4gM00kgyc2oqdxH7TpcjS0A",
-  "https://buy.stripe.com/dRm5kEeq46EG2T3ehNcjS0B",
-  "https://buy.stripe.com/5kQ4gAfu8bZ0eBL8XtcjS0D",
-  "https://buy.stripe.com/cNi5kE5Ty8MObpz2z5cjS0E",
-  "https://buy.stripe.com/14A00k5Ty7IKdxH7TpcjS0F",
-  "https://buy.stripe.com/00wbJ281G6EGalvflRcjS0G",
-  "https://buy.stripe.com/4gM3cw4Pu3su2T3gpVcjS0H",
-  "https://buy.stripe.com/14AfZibdS3su3X73D9cjS0I",
-  "https://buy.stripe.com/cNi00k2Hm3su2T32z5cjS0J",
-  "https://buy.stripe.com/14A9AU3Lq9QS51b4HdcjS0K",
-  "https://buy.stripe.com/fZudRa0ze0gifFP5LhcjS0O",
-  "https://buy.stripe.com/00w14o4Pu3su8dnc9FcjS0N",
-  "https://buy.stripe.com/6oU14oeq4fbceBLflRcjS0M",
-  "https://buy.stripe.com/9B63cw2HmaUW1OZ2z5cjS0R",
-  "https://buy.stripe.com/fZu14obdS4wy8dn7TpcjS0Q",
-  "https://buy.stripe.com/00w6oIa9Oe78alv8XtcjS0P",
-  "https://buy.stripe.com/bJe5kE6XCe78eBL8XtcjS0S",
-  "https://buy.stripe.com/7sY8wQ81GbZ08dn4HdcjS0T",
-  "https://buy.stripe.com/cNi6oI6XCgfg65f6PlcjS0U",
-  "https://buy.stripe.com/aFa5kEa9O1kmfFP1v1cjS0V",
-  "https://buy.stripe.com/7sY7sM3Lq0gictD3D9cjS0W",
-  "https://buy.stripe.com/cNi00k1Did34gJTflRcjS0X",
-  "https://buy.stripe.com/3cI14o0zee7865f4HdcjS0Y",
-  "https://buy.stripe.com/9B6aEY95K9QS3X70qXcjS0Z",
-  "https://buy.stripe.com/dRm3cw6XC5ACeBL7TpcjS10",
-  "https://buy.stripe.com/eVqbJ24Pu5AC0KV7TpcjS11",
-  "https://buy.stripe.com/fZueVebdS5ACeBL0qXcjS12",
-  "https://buy.stripe.com/aFa7sM95KgfgctD4HdcjS13",
-  "https://buy.stripe.com/00wcN65Tyd34bpzgpVcjS14",
-  "https://buy.stripe.com/eVq8wQbdS6EG2T3flRcjS15",
-  "https://buy.stripe.com/dRm3cweq4aUW79j3D9cjS16",
-  "https://buy.stripe.com/8x2aEY81G4wyalv6PlcjS17",
-  "https://buy.stripe.com/6oU14ofu89QS65fgpVcjS18",
-  "https://buy.stripe.com/4gM28s1Di3sugJT3D9cjS19",
-  "https://buy.stripe.com/28EcN60ze9QSbpza1xcjS1a",
-  "https://buy.stripe.com/bJe4gA2Hm5ACdxH2z5cjS1b",
-  "https://buy.stripe.com/7sY3cw4Pu6EG1OZgpVcjS1c",
-  "https://buy.stripe.com/3cI8wQ81G3su65f5LhcjS1d",
-  "https://buy.stripe.com/cNi4gAfu8gfgeBLgpVcjS1e",
-  "https://buy.stripe.com/dRm4gAeq42oqeBLa1xcjS1g",
-  "https://buy.stripe.com/4gM28s4Pue7865f5LhcjS1h",
-  "https://buy.stripe.com/14A00k4Pud3479jflRcjS1i",
-  "https://buy.stripe.com/aFaaEY81Gfbc9hrgpVcjS1j",
-  "https://buy.stripe.com/bJeeVegyc8MOeBLehNcjS1k",
-  "https://buy.stripe.com/3cIeVe4Pu0gifFP8XtcjS1l",
-  "https://buy.stripe.com/3cI28s3Lq3subpzgpVcjS1m",
-  "https://buy.stripe.com/4gM00k81G2oq79j2z5cjS1n",
-  "https://buy.stripe.com/bJe4gA0ze5ACgJTflRcjS1o",
-  "https://buy.stripe.com/8x25kE95K4wy1OZehNcjS1p",
-  "https://buy.stripe.com/4gM28s81GbZ0eBL4HdcjS1q",
-  "https://buy.stripe.com/7sY9AUdm00gibpz6PlcjS1r",
-  "https://buy.stripe.com/7sY00kfu8gfg1OZgpVcjS1s"
-];
-
-// ===== ARTWORK TITLES DATABASE =====
-const artworkTitles = [
-  "Knowledge & Life", "Infinity Vision", "Museum Legacy", "Digital Dreams",
-  "Cosmic Journey", "Silent Thoughts", "Urban Canvas", "Nature's Echo",
-  "Time Passage", "Creative Flow", "Ethereal Beauty", "Soul Connection",
-  "Modern Art", "Ancient Wisdom", "Digital Renaissance", "Color Harmony",
-  "Light & Shadow", "Zen Meditation", "Abstract Reality", "Digital Evolution",
-  "Collector's Edition #20", "Premium Selection", "Exclusive Artwork #22",
-  "Museum Masterpiece", "Artist Collection", "VIP Series", "Rare Edition",
-  "Signature Work", "Gallery Piece", "Archive Edition", "Heritage Collection",
-  "Modern Piece #31", "Contemporary Art", "Digital Expression", "Artistic Vision",
-  "Creative Inspiration", "Modern Sculpture", "Abstract Concept", "Visual Poetry",
-  "Digital Painting #38", "Gallery Exhibition", "Museum Quality", "Collector Prize",
-  "Rare Treasure #42", "Authentic Artwork", "Premium Gallery", "Elite Collection",
-  "Masterwork Series", "Signature Piece", "Exclusive Gallery #47", "VIP Archive",
-  "Museum Selection #49", "Premium Edition #50", "Collector's Gallery #51",
-  "Rare Art Piece", "Authentic Edition", "Digital Masterpiece", "Archive Collection #54",
-  "Gallery Premium", "Museum Exclusive #56", "VIP Selection #57", "Elite Artwork",
-  "Signature Gallery", "Premium Archive #60", "Collector Exclusive #61",
-  "Rare Selection", "Authentic Gallery #63", "Digital Archive #64", "Museum Edition",
-  "Premium Collection #66", "Exclusive Series #67", "VIP Gallery #68",
-  "Collector Archive", "Museum Premium #70", "Gallery Exclusive #71",
-  "Digital Premium #72", "Authentic Archive #73", "Rare Gallery #74",
-  "Premium Selection #75", "Exclusive Archive #76", "VIP Exclusive #77",
-  "Museum Collector #78", "Gallery Archive #79", "Digital Exclusive #80",
-  "Premium Exclusive #81", "Rare Premium #82", "Collector Museum #83",
-  "Archive Gallery #84", "Exclusive Gallery #85", "VIP Archive #86",
-  "Museum Archive #87", "Gallery VIP #88", "Digital Gallery #89",
-  "Premium VIP #90", "Rare Exclusive #91", "Collector Gallery #92",
-  "Archive Premium #93", "Exclusive Premium #94", "VIP Premium #95",
-  "Museum VIP #96", "Gallery Premium #97", "Digital Collector #98", "Final Masterpiece"
-];
-
-// ===== ARTWORK DESCRIPTIONS DATABASE =====
-const descriptions = [
-  "Museum-grade authenticated artwork with collector certificate",
-  "Premium collector digital edition with archive protection",
-  "Exclusive museum collector archive edition",
-  "Limited edition artwork with authentication seal",
-  "Museum quality digital artwork with preservation guarantee",
-  "Collector certified digital art with blockchain verification",
-  "Premium archive edition with museum authentication",
-  "Exclusive collector piece with digital certificate",
-  "Limited museum edition with full authentication",
-  "Premium collection artwork with collector verification",
-  "Authentic museum-grade digital artwork",
-  "Exclusive edition with premium authentication",
-  "Collector archive with museum preservation",
-  "Digital artwork with verified authenticity",
-  "Premium edition with collector's certificate",
-  "Museum archive edition with full verification",
-  "Exclusive digital artwork with authentication",
-  "Collector edition with premium archive status",
-  "Limited premium artwork with museum certification",
-  "Authentic collector piece with digital verification"
-];
-
-// ===== PRICE GENERATION FUNCTION =====
-function generatePrice(index) {
-  const basePrice = 9 + (index * 2.3);
-  return Math.round(basePrice * 10) / 10;
-}
-
-// ===== GENERATE ALL ARTWORK CARDS =====
-const artworks = [];
-for (let i = 0; i < 99; i++) {
-  artworks.push({
-    id: i + 1,
-    title: artworkTitles[i],
-    description: descriptions[i % descriptions.length],
-    price: generatePrice(i),
-    image: `https://images.unsplash.com/photo-${1579783902614 + (i * 100)}-a3fb3927b6a5?q=80&w=1200&auto=format&fit=crop`,
-    stripeLink: stripeLinks[i % stripeLinks.length]
-  });
-}
-
-// ===== CATEGORY ASSIGNMENT =====
-function getCategory(price) {
-  if (price <= 50) return "budget";
-  if (price <= 150) return "premium";
-  return "vip";
-}
-
-// ===== RENDER GALLERY =====
-function renderGallery(filterBy = "all", searchTerm = "") {
-  const gallery = document.getElementById("gallery");
-  gallery.innerHTML = "";
-
-  let filtered = artworks.filter(art => {
-    const matchCategory = filterBy === "all" || getCategory(art.price) === filterBy;
-    const matchSearch = searchTerm === "" || 
-      art.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      art.price.toString().includes(searchTerm);
-    return matchCategory && matchSearch;
-  });
-
-  if (filtered.length === 0) {
-    gallery.innerHTML = '<div class="empty-state"><h3>No artworks found.</h3></div>';
-    document.getElementById("displayCount").textContent = "0";
-    return;
-  }
-
-  filtered.forEach(art => {
-    const qrUrl = encodeURIComponent(art.stripeLink);
-    const card = document.createElement("div");
-    card.className = "card";
-    card.innerHTML = `
-      <div class="card-number">#${String(art.id).padStart(2, '0')}</div>
-      <img src="${art.image}" alt="${art.title}" onerror="this.src='https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=1200&auto=format&fit=crop'">
-      <div class="content">
-        <div class="title">${art.title}</div>
-        <div class="certificate-badge">🔒 CERTIFIED</div>
-        <p class="description">${art.description}</p>
-        <div class="price">€${art.price}</div>
-        <div class="price-category">${getCategory(art.price).toUpperCase()} EDITION</div>
-        <a href="${art.stripeLink}" target="_blank" class="button">🛒 BUY NOW</a>
-        <button class="button2" onclick="window.open('https://dashboard.stripe.com', '_blank')">Stripe Dashboard</button>
-        <div class="qr-section">
-          <div class="qr-label">Scan to Purchase</div>
-          <div class="qr">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=${qrUrl}" alt="QR Code">
-          </div>
-        </div>
-      </div>
-    `;
-    gallery.appendChild(card);
-  });
-
-  document.getElementById("displayCount").textContent = filtered.length;
-}
-
-// ===== UPDATE STATISTICS =====
-function updateStats() {
-  const avgPrice = (artworks.reduce((sum, art) => sum + art.price, 0) / artworks.length).toFixed(0);
-  document.getElementById("avgPrice").textContent = "€" + avgPrice;
-}
-
-// ===== EVENT LISTENERS =====
-document.querySelectorAll(".filter-btn").forEach(btn => {
-  btn.addEventListener("click", function() {
-    document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-    this.classList.add("active");
-    const filter = this.dataset.filter;
-    const search = document.getElementById("searchBox").value;
-    renderGallery(filter, search);
-  });
-});
-
-document.getElementById("searchBox").addEventListener("input", function() {
-  const activeFilter = document.querySelector(".filter-btn.active").dataset.filter;
-  renderGallery(activeFilter, this.value);
-});
-
-// ===== INITIAL LOAD =====
-window.addEventListener("DOMContentLoaded", function() {
-  updateStats();
-  renderGallery();
-  console.log("✅ Gallery Loaded: 99 Artworks | Stripe Integration Active | QR Codes Generated");
-});
-
-</script>
 
 </body>
 </html>
+```
+
+---
+
+# PAYMENTS index.html
+
+```html
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stripe Art Payments</title>
+  <style>
+    body{
+      background:#0d0d0d;
+      color:white;
+      font-family:Arial,sans-serif;
+      text-align:center;
+      margin:0;
+      padding:20px;
+    }
+
+    h1{
+      margin-bottom:30px;
+    }
+
+    .payment-box{
+      background:#1c1c1c;
+      margin:20px auto;
+      max-width:500px;
+      padding:25px;
+      border-radius:15px;
+    }
+
+    .payment-box img{
+      width:100%;
+      border-radius:10px;
+    }
+
+    .payment-box a{
+      display:inline-block;
+      margin-top:15px;
+      background:#00c896;
+      color:white;
+      padding:12px 20px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .payment-box a:hover{
+      background:#00a67d;
+    }
+  </style>
+</head>
+<body>
+
+<h1>ART PAYMENT COLLECTION</h1>
+
+<div class="payment-box">
+  <h2>QR ART COLLECTION</h2>
+  <img src="https://picsum.photos/500/300" alt="Art Preview">
+  <p>Digital QR Artwork + Certificate</p>
+  <a href="https://buy.stripe.com/9B65kE81Gd34gJTehNcjS0c">BUY NOW</a>
+</div>
+
+<div class="payment-box">
+  <h2>ART BOOK EDITION</h2>
+  <img src="https://picsum.photos/501/300" alt="Book Preview">
+  <p>Digital Book Access + Archive</p>
+  <a href="https://buy.stripe.com/28E8wQeq4aUWfFPa1xcjS00">BUY NOW</a>
+</div>
+
+<div class="payment-box">
+  <h2>LIMITED DIGITAL ART</h2>
+  <img src="https://picsum.photos/502/300" alt="Digital Art">
+  <p>Signed Digital Edition</p>
+  <a href="https://buy.stripe.com/4gM00kdm01kmctDgpVcjS01">BUY NOW</a>
+</div>
+
+<div class="payment-box">
+  <h2>ART CERTIFICATE ACCESS</h2>
+  <img src="https://picsum.photos/503/300" alt="Certificate">
+  <p>Authenticity Certificate</p>
+  <a href="https://buy.stripe.com/4gM6oIa9Oe78eBL4HdcjS02">BUY NOW</a>
+</div>
+
+</body>
+</html>
+```
+
+---
+
+# Recommended Structure
+
+```plaintext
+/repository
+│
+├── index.html
+├── gallery/
+│   └── index.html
+├── qr/
+│   └── index.html
+├── payments/
+│   └── index.html
+├── certificates/
+│   └── index.html
+├── books/
+│   └── index.html
+├── assets/
+│   ├── images/
+│   └── qr/
+└── README.md
+```
