@@ -1,0 +1,334 @@
+<!-- ===================================================== -->
+<!-- BILT ART MUSEUM EDITABLE MASTER TEMPLATE -->
+<!-- ONLY CHANGE THE TEXT BETWEEN [ ] -->
+<!-- ===================================================== -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ===================================================== -->
+<!-- CHANGE TITLE -->
+<!-- ===================================================== -->
+
+<title>[YOUR WEBSITE TITLE]</title>
+
+<!-- ===================================================== -->
+<!-- SEO -->
+<!-- ===================================================== -->
+
+<meta name="description"
+content="[YOUR WEBSITE DESCRIPTION]">
+
+<meta property="og:title"
+content="[YOUR WEBSITE TITLE]">
+
+<meta property="og:description"
+content="[YOUR WEBSITE DESCRIPTION]">
+
+<!-- ===================================================== -->
+<!-- STYLE -->
+<!-- ===================================================== -->
+
+<style>
+
+body{
+background:#050505;
+color:white;
+font-family:Arial,sans-serif;
+margin:0;
+padding:0;
+}
+
+header{
+padding:25px;
+background:black;
+border-bottom:2px solid gold;
+text-align:center;
+}
+
+header h1{
+color:gold;
+font-size:42px;
+letter-spacing:5px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:40px;
+padding:50px;
+}
+
+.card{
+background:#111;
+border-radius:30px;
+overflow:hidden;
+border:1px solid #333;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:gold;
+}
+
+.card img{
+width:100%;
+height:420px;
+object-fit:cover;
+}
+
+.content{
+padding:25px;
+}
+
+.title{
+font-size:30px;
+color:gold;
+margin-bottom:15px;
+}
+
+.price{
+font-size:40px;
+font-weight:bold;
+margin-top:20px;
+}
+
+.button{
+display:block;
+text-align:center;
+padding:16px;
+background:gold;
+color:black;
+font-weight:bold;
+font-size:18px;
+text-decoration:none;
+border-radius:50px;
+margin-top:20px;
+}
+
+.button2{
+display:block;
+text-align:center;
+padding:16px;
+background:#222;
+color:white;
+font-weight:bold;
+font-size:16px;
+text-decoration:none;
+border-radius:50px;
+margin-top:15px;
+border:1px solid #555;
+}
+
+.qr{
+margin-top:25px;
+text-align:center;
+}
+
+footer{
+padding:50px;
+text-align:center;
+border-top:1px solid #333;
+margin-top:60px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ===================================================== -->
+<!-- HEADER -->
+<!-- ===================================================== -->
+
+<header>
+
+<!-- CHANGE WEBSITE NAME -->
+
+<h1>[YOUR WEBSITE NAME]</h1>
+
+<!-- CHANGE WEBSITE SLOGAN -->
+
+<p>
+[YOUR WEBSITE SLOGAN]
+</p>
+
+</header>
+
+<!-- ===================================================== -->
+<!-- GALLERY -->
+<!-- ===================================================== -->
+
+<section class="gallery">
+
+<!-- ===================================================== -->
+<!-- CARD TEMPLATE -->
+<!-- COPY THIS ENTIRE BLOCK TO ADD MORE PRODUCTS -->
+<!-- ===================================================== -->
+
+<div class="card">
+
+<!-- ===================================================== -->
+<!-- CHANGE IMAGE URL -->
+<!-- ===================================================== -->
+
+<img
+src="[PASTE IMAGE URL HERE]"
+alt="Artwork">
+
+<div class="content">
+
+<!-- ===================================================== -->
+<!-- CHANGE PRODUCT TITLE -->
+<!-- ===================================================== -->
+
+<div class="title">
+[PRODUCT TITLE]
+</div>
+
+<!-- ===================================================== -->
+<!-- CHANGE DESCRIPTION -->
+<!-- ===================================================== -->
+
+<p>
+[PRODUCT DESCRIPTION]
+</p>
+
+<!-- ===================================================== -->
+<!-- CHANGE PRICE -->
+<!-- ===================================================== -->
+
+<div class="price">
+[PRICE]
+</div>
+
+<!-- ===================================================== -->
+<!-- STRIPE PAYMENT -->
+<!-- CHANGE STRIPE URL -->
+<!-- ===================================================== -->
+
+<a
+href="[YOUR STRIPE PAYMENT LINK]"
+target="_blank"
+class="button">
+
+BUY NOW
+
+</a>
+
+<!-- ===================================================== -->
+<!-- OPTIONAL SECOND BUTTON -->
+<!-- CHANGE URL -->
+<!-- ===================================================== -->
+
+<a
+href="[YOUR SECOND URL]"
+target="_blank"
+class="button2">
+
+MORE INFO
+
+</a>
+
+<!-- ===================================================== -->
+<!-- QR CODE -->
+<!-- CHANGE QR URL -->
+<!-- ===================================================== -->
+
+<div class="qr">
+
+<img
+src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=[YOUR_URL]"
+alt="QR CODE">
+
+</div>
+
+</div>
+</div>
+
+<!-- ===================================================== -->
+<!-- END PRODUCT TEMPLATE -->
+<!-- COPY ABOVE BLOCK AGAIN FOR MORE PRODUCTS -->
+<!-- ===================================================== -->
+
+</section>
+
+<!-- ===================================================== -->
+<!-- CONTACT -->
+<!-- ===================================================== -->
+
+<footer>
+
+<h2 style="color:gold;">
+Official Contact
+</h2>
+
+<!-- CHANGE AUTHOR -->
+
+<p>
+Author:
+[YOUR NAME]
+</p>
+
+<!-- CHANGE EMAIL -->
+
+<p>
+
+<a
+href="mailto:[YOUR EMAIL]"
+style="color:gold;text-decoration:none;">
+
+[YOUR EMAIL]
+
+</a>
+
+</p>
+
+</footer>
+
+<!-- ===================================================== -->
+<!-- FUNCTIONS -->
+<!-- ===================================================== -->
+
+<script>
+
+console.log("SYSTEM ACTIVE");
+
+function openStripe(){
+
+window.open(
+'https://dashboard.stripe.com',
+'_blank'
+);
+
+}
+
+function openGitLab(){
+
+window.open(
+'https://gitlab.com',
+'_blank'
+);
+
+}
+
+function openNetlify(){
+
+window.open(
+'https://app.netlify.com',
+'_blank'
+);
+
+}
+
+</script>
+
+</body>
+</html>
