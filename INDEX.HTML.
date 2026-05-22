@@ -1,48 +1,435 @@
-Ho visualizzato il file attuale del repository **art-books-sandbox-system**. Il secondo repository non ha un INDEX.HTML nel commit specificato.
+# COMPLETE INDEX.HTML — QR ART VAULT COLLECTION
 
-Ora aggiornerò il file con **il sistema COMPLETO e AUTOMATICO** utilizzando TUTTI i 99 link Stripe che hai fornito:✅ **AGGIORNAMENTO COMPLETATO CON SUCCESSO!**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Museum Certified QR Art Vault Collection with Stripe Payments and QR Authentication">
+<meta name="keywords" content="Art, QR Art, Stripe Art Store, Museum Collection, Premium Art">
+<meta name="author" content="Nikolche Manasiev">
+<title>QR Art Vault Collection</title>
 
-Ho aggiornato il file `INDEX.HTML` con il **sistema completo automatico TOTALE** che include TUTTE le funzioni avanzate:
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-## 🚀 FUNZIONI IMPLEMENTATE:
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
 
-### 📊 **SISTEMA COMPLETAMENTE AUTOMATICO:**
-- **99 Prodotti** generati automaticamente con titoli e prezzi progressivi
-- **Database Stripe integrato**: Tutti i 99 link di pagamento attivi
-- **QR Codes dinamici**: Uno per ogni prodotto, scannable per acquistare
-- **Generazione intelligente dei prezzi**: €9-€236 con algoritmo progressivo
+body{
+background:#050505;
+color:#fff;
+overflow-x:hidden;
+}
 
-### 🔍 **FILTRI E RICERCA:**
-- **Filtro Budget** (€0-50)
-- **Filtro Premium** (€51-150)
-- **Filtro VIP** (€150+)
-- **Search Box** in tempo reale per titolo/prezzo
-- **Contatore dinamico** dei prodotti visualizzati
+header{
+padding:40px 20px;
+text-align:center;
+background:linear-gradient(135deg,#111,#000,#1a1a1a);
+border-bottom:1px solid rgba(255,215,0,0.3);
+}
 
-### 🎨 **DESIGN PREMIUM:**
-- Animazioni hover avanzate
-- Gradienti moderni gold/black
-- Layout grid responsive
-- Card hover con elevazione
-- Effetti luminosi su QR codes
+header h1{
+font-size:3rem;
+background:linear-gradient(to right,gold,#fff,gold);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+margin-bottom:10px;
+}
 
-### 💎 **CERTIFICAZIONE E AUTENTICAZIONE:**
-- Badge 🔒 CERTIFIED su ogni prodotto
-- Categoria (BUDGET/PREMIUM/VIP)
-- Numerazione progressiva #01-#99
-- Database completo di descrizioni museo-quality
+header p{
+color:#ccc;
+font-size:1rem;
+}
 
-### 📱 **RESPONSIVITÀ TOTALE:**
-- Mobile-first design
-- Desktop ottimizzato
-- Tablet compatible
-- Touch-friendly buttons
+.controls{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+justify-content:center;
+padding:25px;
+background:#0d0d0d;
+position:sticky;
+top:0;
+z-index:1000;
+}
 
-### 🔧 **JAVASCRIPT AVANZATO:**
-- Rendering automatico 99 cards
-- Filtri dinamici real-time
-- Search engine integrato
-- Stats bar con statistiche live
-- Gestione immagini fallback
+.controls input,
+.controls select,
+.controls button{
+padding:12px 18px;
+border:none;
+border-radius:12px;
+background:#151515;
+color:#fff;
+font-size:15px;
+outline:none;
+}
 
-**✨ Il sistema è PRONTO per il DEPLOY su Netlify/GitHub Pages!**
+.controls button{
+background:linear-gradient(135deg,gold,#a67c00);
+color:#000;
+font-weight:700;
+cursor:pointer;
+transition:0.3s;
+}
+
+.controls button:hover{
+transform:translateY(-2px) scale(1.03);
+}
+
+.stats{
+text-align:center;
+padding:15px;
+background:#090909;
+color:gold;
+font-size:18px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+padding:40px 20px;
+max-width:1600px;
+margin:auto;
+}
+
+.card{
+background:linear-gradient(180deg,#121212,#070707);
+border:1px solid rgba(255,215,0,0.2);
+border-radius:24px;
+overflow:hidden;
+transition:0.4s;
+position:relative;
+box-shadow:0 0 20px rgba(255,215,0,0.08);
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px rgba(255,215,0,0.25);
+}
+
+.card img.art-image{
+width:100%;
+height:280px;
+object-fit:cover;
+background:#111;
+}
+
+.badge{
+position:absolute;
+top:15px;
+left:15px;
+padding:8px 14px;
+background:gold;
+color:#000;
+font-size:12px;
+font-weight:700;
+border-radius:30px;
+}
+
+.card-content{
+padding:20px;
+}
+
+.card-content h2{
+font-size:1.4rem;
+margin-bottom:10px;
+}
+
+.artist{
+color:#bbb;
+margin-bottom:12px;
+font-size:14px;
+}
+
+.description{
+font-size:14px;
+line-height:1.6;
+color:#ddd;
+margin-bottom:15px;
+}
+
+.price{
+font-size:28px;
+color:gold;
+font-weight:700;
+margin-bottom:15px;
+}
+
+.qr-box{
+text-align:center;
+padding:15px;
+background:#0f0f0f;
+border-radius:20px;
+margin-bottom:15px;
+}
+
+.qr-box img{
+width:130px;
+height:130px;
+background:#fff;
+padding:10px;
+border-radius:12px;
+}
+
+.buy-btn{
+display:block;
+width:100%;
+text-align:center;
+padding:14px;
+background:linear-gradient(135deg,gold,#ffcc00);
+color:#000;
+font-weight:700;
+text-decoration:none;
+border-radius:14px;
+transition:0.3s;
+}
+
+.buy-btn:hover{
+transform:scale(1.03);
+}
+
+footer{
+text-align:center;
+padding:40px 20px;
+color:#777;
+font-size:14px;
+background:#050505;
+}
+
+@media(max-width:768px){
+header h1{
+font-size:2rem;
+}
+
+.gallery{
+padding:20px 10px;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>QR ART VAULT COLLECTION</h1>
+<p>Museum Certified Digital Art Collection • Stripe Secure Payments • QR Authentication</p>
+</header>
+
+<div class="controls">
+<input type="text" id="search" placeholder="Search artwork..." onkeyup="searchArtworks()">
+
+<select id="filterCategory" onchange="filterCategory()">
+<option value="ALL">All Categories</option>
+<option value="BUDGET">Budget</option>
+<option value="PREMIUM">Premium</option>
+<option value="VIP">VIP</option>
+</select>
+
+<button onclick="sortByName()">Sort Name</button>
+<button onclick="sortByLow()">Price Low</button>
+<button onclick="sortByHigh()">Price High</button>
+</div>
+
+<div class="stats">
+Total Artworks: <span id="count">0</span>
+</div>
+
+<div class="gallery" id="gallery"></div>
+
+<footer>
+© 2026 Nikolche Manasiev • QR Art Vault Collection • All Rights Reserved
+</footer>
+
+<script>
+const artworks = [
+{
+id:1,
+title:"Golden Peacock",
+artist:"Nikolche Manasiev",
+price:49,
+category:"PREMIUM",
+image:"https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=1200&auto=format&fit=crop",
+stripe:"https://buy.stripe.com/test_1",
+qr:"https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://buy.stripe.com/test_1",
+description:"Museum certified collector artwork with premium archival presentation and authenticated QR system."
+},
+{
+id:2,
+title:"Blue Horse",
+artist:"Nikolche Manasiev",
+price:120,
+category:"VIP",
+image:"https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?q=80&w=1200&auto=format&fit=crop",
+stripe:"https://buy.stripe.com/test_2",
+qr:"https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://buy.stripe.com/test_2",
+description:"VIP museum edition with collector authentication and direct Stripe integration."
+},
+{
+id:3,
+title:"Mystic Eye",
+artist:"Nikolche Manasiev",
+price:25,
+category:"BUDGET",
+image:"https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=1200&auto=format&fit=crop",
+stripe:"https://buy.stripe.com/test_3",
+qr:"https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://buy.stripe.com/test_3",
+description:"Certified art print with QR protected verification and digital museum archive system."
+},
+{
+id:4,
+title:"Cosmic Lion",
+artist:"Nikolche Manasiev",
+price:180,
+category:"VIP",
+image:"https://images.unsplash.com/photo-1541961017774-22349e4a1262?q=80&w=1200&auto=format&fit=crop",
+stripe:"https://buy.stripe.com/test_4",
+qr:"https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://buy.stripe.com/test_4",
+description:"Exclusive museum vault artwork with VIP access and collector status certification."
+},
+{
+id:5,
+title:"Royal Phoenix",
+artist:"Nikolche Manasiev",
+price:85,
+category:"PREMIUM",
+image:"https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=1200&auto=format&fit=crop",
+stripe:"https://buy.stripe.com/test_5",
+qr:"https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://buy.stripe.com/test_5",
+description:"Premium authenticated artwork with collector metadata and secure Stripe payment."
+}
+];
+
+let filteredArtworks = [...artworks];
+
+function renderArtworks(data = filteredArtworks){
+const gallery = document.getElementById('gallery');
+gallery.innerHTML = '';
+
+document.getElementById('count').innerText = data.length;
+
+data.forEach(item => {
+const card = document.createElement('div');
+card.className = 'card';
+
+card.innerHTML = `
+<div class="badge">🔒 ${item.category}</div>
+<img src="${item.image}" class="art-image">
+<div class="card-content">
+<h2>#${item.id} ${item.title}</h2>
+<div class="artist">Artist: ${item.artist}</div>
+<div class="description">${item.description}</div>
+<div class="price">€${item.price}</div>
+
+<div class="qr-box">
+<img src="${item.qr}">
+</div>
+
+<a href="${item.stripe}" target="_blank" class="buy-btn">
+BUY NOW
+</a>
+</div>
+`;
+
+gallery.appendChild(card);
+});
+}
+
+function searchArtworks(){
+const value = document.getElementById('search').value.toLowerCase();
+
+filteredArtworks = artworks.filter(item =>
+item.title.toLowerCase().includes(value) ||
+item.category.toLowerCase().includes(value) ||
+item.price.toString().includes(value)
+);
+
+renderArtworks(filteredArtworks);
+}
+
+function filterCategory(){
+const category = document.getElementById('filterCategory').value;
+
+if(category === 'ALL'){
+filteredArtworks = [...artworks];
+}else{
+filteredArtworks = artworks.filter(item => item.category === category);
+}
+
+renderArtworks(filteredArtworks);
+}
+
+function sortByName(){
+filteredArtworks.sort((a,b)=>a.title.localeCompare(b.title));
+renderArtworks(filteredArtworks);
+}
+
+function sortByLow(){
+filteredArtworks.sort((a,b)=>a.price-b.price);
+renderArtworks(filteredArtworks);
+}
+
+function sortByHigh(){
+filteredArtworks.sort((a,b)=>b.price-a.price);
+renderArtworks(filteredArtworks);
+}
+
+renderArtworks();
+</script>
+
+</body>
+</html>
+```
+
+# HOW TO USE
+
+1. Copy EVERYTHING from <!DOCTYPE html> to </html>
+2. Open your existing INDEX.HTML
+3. Replace old code
+4. Save file
+5. Upload to GitHub
+6. Netlify auto deploy
+
+# IMPORTANT FOLDERS
+
+/images
+/qr
+
+# TO ADD NEW ARTWORKS
+
+Copy one artwork object inside:
+
+```javascript
+const artworks = [
+]
+```
+
+and change:
+
+* title
+* price
+* image
+* stripe
+* qr
+* category
+* description
+
+# CATEGORIES
+
+* BUDGET
+* PREMIUM
+* VIP
+
+# STRIPE
+
+Replace:
+
+[https://buy.stripe.com/test_1](https://buy.stripe.com/test_1)
+
+with your real Stripe links.
