@@ -124,3 +124,76 @@ BOOKS,LIBRI,КНИГИ.
   -<https://buy.stripe.com/aFaaEY81Gfbc9hrgpVcjS1j>
  
   -
+<https://buy.stripe.com/aFa7sMchW0gieBL5LhcjS2t>
+  -
+<https://buy.stripe.com/dRm6oIfu86EG51b4HdcjS2u>
+  -
+<https://buy.stripe.com/bJe8wQ0ze8MOdxH1v1cjS2v>
+  -
+<https://buy.stripe.com/9B64gAfu83su65fflRcjS2w>
+  -
+<https://buy.stripe.com/fZu6oI2HmaUW0KV2z5cjS2i>
+  -
+<https://buy.stripe.com/dRm14o3Lqe78eBL7TpcjS2j>
+  -
+<https://buy.stripe.com/7sY8wQ95KaUW2T36PlcjS2k>
+  -
+<https://buy.stripe.com/9B628sa9O8MO51b0qXcjS2x>
+  -
+<https://buy.stripe.com/9B6fZichW8MO51ba1xcjS2z>
+  -
+<https://buy.stripe.com/4gM14ofu84wyctD3D9cjS2A>
+  -
+<https://buy.stripe.com/5kQaEY1Did34ctD2z5cjS2B>
+  -
+<https://buy.stripe.com/4gMcN6gyc8MOctD0qXcjS2D>
+  -
+<https://buy.stripe.com/bJebJ281GbZ051b8XtcjS2E>
+  -
+<https://buy.stripe.com/dRmfZi81G0gi9hr1v1cjS2U>
+  -
+<https://buy.stripe.com/3cI5kEchWbZ065fddJcjS2V>
+  -
+<https://buy.stripe.com/14A6oI5Tyd34bpz7TpcjS2W>
+  -
+<https://buy.stripe.com/cNi8wQ3Lq4wy0KVflRcjS2R>
+  -
+<https://buy.stripe.com/aFa3cw95K9QS51behNcjS2S>
+  -
+<https://buy.stripe.com/cNi6oI3LqaUW8dn2z5cjS2T>
+  -
+<https://buy.stripe.com/dRm00k4Pufbc79j7TpcjS2O>
+  -
+<https://buy.stripe.com/14A4gAgyc4wy2T3a1xcjS2P>
+  -
+<https://buy.stripe.com/8x2fZi81Ge780KVddJcjS33>
+  -
+<https://buy.stripe.com/14A3cw3Lq5AC8dna1xcjS34>
+  -
+<https://buy.stripe.com/bJe6oIgycgfgeBLflRcjS35>
+  -
+<https://buy.stripe.com/9B600kgycd3465fa1xcjS2L>
+  -
+<https://buy.stripe.com/8x23cw2Hme7879jc9FcjS2M>
+  -
+<https://buy.stripe.com/5kQ4gA0zebZ079j4HdcjS2N>
+  -
+<https://buy.stripe.com/4gM5kE81G0gictD7TpcjS2I>
+  -
+<https://buy.stripe.com/bJe00keq4e78ctD6PlcjS2J>
+  -
+<https://buy.stripe.com/4gM14obdS5ACeBL6PlcjS2K>
+  -
+<https://buy.stripe.com/cNi6oI6XC3sufFPc9FcjS2F>
+  -
+<https://buy.stripe.com/7sY4gA1Di0gi65fa1xcjS2G>
+  -
+<https://buy.stripe.com/5kQ14o5Ty4wyalv3D9cjS2H>
+  -
+<https://buy.stripe.com/fZu5kEeq41kmbpzddJcjS30>
+  -
+<https://buy.stripe.com/00waEY5Ty1km1OZ4HdcjS31>
+  -
+<https://buy.stripe.com/6oUcN681G7IK3X7c9FcjS32>
+  -
+
