@@ -231,4 +231,16 @@ BOOKS,LIBRI,КНИГИ.
   -
 <https://buy.stripe.com/6oUcN681G7IK3X7c9FcjS32>
   -
+<https://buy.stripe.com/eVq5kEa9OaUWctD8XtcjS36>
+  -
+<https://buy.stripe.com/9B66oI3LqgfgdxHgpVcjS37>
+  -
+<https://buy.stripe.com/dRmbJ26XC7IK9hra1xcjS38>
+  -
+<https://buy.stripe.com/bJe7sMeq43sufFP1v1cjS39>
+  -
+<https://buy.stripe.com/00wcN6eq46EGeBLehNcjS3a>
+  -
+<https://buy.stripe.com/eVq3cw1Di4wy0KVc9FcjS3b>
+  -
 
